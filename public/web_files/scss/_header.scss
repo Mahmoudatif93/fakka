@@ -1,0 +1,17 @@
+header {
+    position: fixed;
+    width: 100%;
+    background: white;
+    box-shadow: #0000001A 0px 3px 6px;
+    z-index: 1;
+    top: 52px;
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    .dropdown {
+        color: $primaryColor;
+        font-size: 18px;
+        padding: 5px;
+    }
+}

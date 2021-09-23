@@ -1,0 +1,114 @@
+.multiple-select {
+  width: 325px;
+  position: relative;
+}
+
+.multiple-select .label {
+  position: absolute;
+  top: -36px;
+  font-size: 18px;
+}
+
+.multiple-select .sublabel {
+  position: absolute;
+  top: -36px;
+  font-size: 18px;
+  right: 0;
+}
+
+.multiple-select #dropdownButton {
+  width: 325px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #015cab;
+  font-size: 20px;
+  background: white;
+  background: url(../images/arrow.svg) no-repeat center right 20px;
+  background-size: 20px;
+}
+
+.multiple-select #dropdownButton span {
+  top: 18px;
+}
+
+.multiple-select #mySelector {
+  z-index: 5;
+  width: 325px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  height: 0;
+  background: white;
+}
+
+.multiple-select #dropdownButton:focus:hover + #mySelector,
+.multiple-select #mySelector:hover {
+  visibility: visible;
+  opacity: 1;
+  height: 10rem;
+}
+
+.multiple-select #dropdownButton:focus:hover + #mySelector .option,
+.multiple-select #mySelector:hover .option {
+  opacity: 1;
+  visibility: visible;
+}
+
+.multiple-select .option {
+  font-size: 18px;
+  opacity: 0;
+  padding: 15px 15px;
+  visibility: hidden;
+  --webkit-transition: opacity 400ms, visibility 400ms;
+  -webkit-transition: opacity 400ms, visibility 400ms;
+  transition: opacity 400ms, visibility 400ms;
+}
+
+.multiple-select .select {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px 15px;
+}
+
+.single-select {
+  width: 325px;
+  position: relative;
+  margin-top: 40px;
+}
+
+.single-select .label {
+  position: absolute;
+  top: -36px;
+  font-size: 18px;
+}
+
+.single-select .sublabel {
+  position: absolute;
+  top: -36px;
+  font-size: 18px;
+  right: 0;
+}
+
+.single-select .dropdown {
+  width: 325px;
+  border: 1px solid #bfbfbf;
+  border-radius: 6px;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #015cab;
+  font-size: 20px;
+  background: white;
+  background: url(../images/arrow.svg) no-repeat center right 20px;
+  background-size: 20px;
+  padding: 0 10px;
+}
+
+.single-select .dropdown .option {
+  color: black;
+}
+/*# sourceMappingURL=editing.css.map */

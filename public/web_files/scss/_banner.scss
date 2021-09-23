@@ -1,0 +1,50 @@
+.banner {
+    .bg {
+        height: 100vh;
+        position: relative;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    .slider .slick-side {
+        position: relative;
+        height: 100vh;
+    }
+    .container {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 1200px;
+        padding: 0 15px;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        p {
+            font-size: 31px;
+            font-weight: 400;
+            padding-top: 5px;
+            padding-bottom: 24px;
+            color: white;
+        }
+        .ratio {
+            >div {
+                background: white;
+                color: $primaryColor;
+                margin: 0 10px;
+                padding: 15px 40px;
+                padding-left: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                width: 345px;
+                margin-bottom: 22px;
+            }
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+}
